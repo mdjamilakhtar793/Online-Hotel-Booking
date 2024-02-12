@@ -22,7 +22,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
-
   const onRent = useCallback(() => {
     if (!currentUser) {
       return loginModel.onOpen();

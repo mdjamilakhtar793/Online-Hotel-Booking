@@ -9,6 +9,7 @@ import getCurrentUser from "./actions/getCurrentUser";
 import ToasterProvider from "./providers/ToasterProvider";
 import SearchModal from "./components/models/SearchModal";
 import RentModal from "./components/models/RentModal";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default async function RootLayout({
           <NavBar currentUser={currentUser} />
         </ClientOnly>
         <div className="pb-20 pt-28">{children}</div>
+        <Footer />
       </body>
     </html>
   );
